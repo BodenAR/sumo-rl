@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges>
+    <!-- Horizontal -->
+    <edge id="e1" from="n1" to="n2" priority="1" numLanes="1" speed="13.9"/>
+    <edge id="e2" from="n2" to="n1" priority="1" numLanes="1" speed="13.9"/>
+
+    <!-- Vertical (left column) -->
+    <edge id="e3" from="n1" to="n3" priority="1" numLanes="1" speed="13.9"/>
+    <edge id="e4" from="n3" to="n1" priority="1" numLanes="1" speed="13.9"/>
+
+    <!-- Vertical (right column) -->
+    <edge id="e5" from="n2" to="n4" priority="1" numLanes="1" speed="13.9"/>
+    <edge id="e6" from="n4" to="n2" priority="1" numLanes="1" speed="13.9"/>
+
+    <!-- Horizontal (bottom) -->
+    <edge id="e7" from="n3" to="n4" priority="1" numLanes="1" speed="13.9"/>
+    <edge id="e8" from="n4" to="n3" priority="1" numLanes="1" speed="13.9"/>
+</edges>
