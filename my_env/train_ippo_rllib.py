@@ -192,7 +192,7 @@ if __name__ == "__main__":
         .api_stack(enable_rl_module_and_learner=False,
                 enable_env_runner_and_connector_v2=False)
         .env_runners(num_env_runners=0)
-        .callbacks(lambda: EpisodeRewardLogger(csv_path="training_log_ippo.csv"))
+        .callbacks(lambda: EpisodeRewardLogger(csv_path="training_log_ippo_v2.csv"))
         .training(
             gamma=0.99,
             train_batch_size=4096,
@@ -205,7 +205,7 @@ if __name__ == "__main__":
     algo = config.build_algo()
 
     # Train
-    for i in range(50):  # iterations; each iteration collects train_batch_size steps (across agents)
+    for i in range(20):  # iterations; each iteration collects train_batch_size steps (across agents)
         result = algo.train()
         print(
             f"iter={i} "

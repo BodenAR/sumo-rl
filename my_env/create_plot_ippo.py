@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-CSV_PATH = "training_log_ippo.csv"
+CSV_PATH = "training_log_ippo_v2.csv"
 OUT_DIR = "plots"
 ROLLING_WINDOW = 20  # smoothing in episodes
 
